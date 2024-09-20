@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box; /* to avoid width problems if padding */
+  }
+
+body {
+    background-color: rgb(234, 219, 248);
+    font-family: "poppins", sans-serif;
+}
+
+/*.navbar {
+    background-color:  #eadbf8 !important;
+}*/
+
+
+.lead {
+    text-wrap: wrap;
+}
+
+.h1 {
+    font-weight: 800 !important;
+    background:-webkit-linear-gradient(#9b0ccb, #690d80) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+
+.location {
+    font-weight: 400;
+}
+
+.h2 {
+    font-weight: 800;
+}
+
+.btn {
+    background-color: #9b0ccb;
+    border-color: #9b0ccb;    
+}
+
+.btn:hover {
+    background-color: #690d80;
+    border-color: #690d80;
+}
+
+.card-title {
+    text-shadow: 2px 2px 5px #3f3f3f;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow: 0 0 10px #3f3f3f;
+}
+
+
+/*   GALLERY ABOUT  */
+
+.container-gallery {
+    display: flex;
+    width: 60vw;
+  }
+  
+  .panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    -webkit-transition: all 700ms ease-in;
+  }
+  
+  
+  .panel.active {
+    flex: 5;
+  }
+    
+  @media (max-width: 480px) {
+    .container-gallery {
+      width: 100vw;
+    }
+  
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+      display: none;
+    }
+  }
+
+.card-project-txt-1 { /*kalm*/
+    background: rgb(86, 86, 86);
+    animation: gradient 5s ease infinite;
+    background-image: linear-gradient(160deg, #E9BF85, #3E1811);
+}
+
+.card-project-txt-2 {  /* jorge libreta */
+    background: rgb(86, 86, 86);
+    animation: gradient 5s ease infinite;
+    background-image: linear-gradient(160deg, #96bdf1, #386DB0);
+}
+
+.card-project-txt-3 { /*us liquor store*/
+    background: rgb(86, 86, 86);
+    animation: gradient 5s ease infinite;
+    background-image: linear-gradient(160deg, #808080, #323232);
+}
+
+.card-project-txt-4 { /*indie andie */
+    background: rgb(86, 86, 86);
+    animation: gradient 5s ease infinite;
+    background-image: linear-gradient(160deg, #9944EF, #4F0098);
+}
+
+.card-project-txt-5 { /* Cocina Nora*/
+  background: rgb(86, 86, 86);
+  animation: gradient 5s ease infinite;
+  background-image: linear-gradient(160deg, #E30613, #E94B5D);
+}
+
+.card-project-txt-6 { /*web development project*/
+  background: rgb(86, 86, 86);
+  animation: gradient 5s ease infinite;
+  background-image: linear-gradient(160deg, #738c4c, #1e2214);
+}
